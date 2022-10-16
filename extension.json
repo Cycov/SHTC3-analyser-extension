@@ -5,7 +5,7 @@
   "version": "1.0.1",
   "description": "Converts I2C bytes into SHTC3 response",
   "extensions": {
-    "I2C Transactions": {
+    "SHTC3 Transactions": {
       "type": "HighLevelAnalyzer",
       "entryPoint": "HighLevelAnalyzer.Hla"
     }

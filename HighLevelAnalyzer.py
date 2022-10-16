@@ -134,7 +134,7 @@ class Hla(HighLevelAnalyzer):
                         if (self.frame_bytes[0] << 8 | self.frame_bytes[1]) == 0x401A:
                             commandName = "Read low power mode, measure RH first with clock stretching disabled"
                     if commandName == "":
-                        self.temp_frame.data["data"] = "Invalid command: 0x" + hex((self.frame_bytes[0] << 8 | self.frame_bytes[1]))
+                        self.temp_frame.data["data"] = "Invalid command: " + hex((self.frame_bytes[0] << 8 | self.frame_bytes[1]))
                     else:
                         self.temp_frame.data["data"] = "Command: " + commandName
                 new_frame = self.temp_frame
