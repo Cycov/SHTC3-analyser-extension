@@ -1,0 +1,13 @@
+{
+  "name": "SHTC3 Transactions",
+  "apiVersion": "1.0.0",
+  "author": "Dragos Circa",
+  "version": "0.0.1",
+  "description": "Converts I2C bytes into SHTC3 response",
+  "extensions": {
+    "I2C Transactions": {
+      "type": "HighLevelAnalyzer",
+      "entryPoint": "HighLevelAnalyzer.Hla"
+    }
+  }
+}
