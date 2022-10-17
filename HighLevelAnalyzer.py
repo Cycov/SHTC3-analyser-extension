@@ -104,7 +104,7 @@ class Hla(HighLevelAnalyzer):
                         self.temp_frame.data["data"] = "SHT identifier: " + str(((readID >> 5) & 1) | (readID & 0x3F))
                     else:
                         self.temp_frame.data["address"] = "error"
-                        self.temp_frame.data["data"] = "Invalid number of bytes: " + self.frame_bytes
+                        self.temp_frame.data["data"] = "Invalid number of bytes: " + str(len(self.frame_bytes))
                         
                 else:
                     commandName = ""
